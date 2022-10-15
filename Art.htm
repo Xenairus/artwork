@@ -1,0 +1,116 @@
+
+<html>
+    <head>
+        <title>Nenneth's Museum</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    </body>
+  
+        <div class="main"> 
+            <nav>
+            <div class="logo">
+                    <img src="hesus.png" alt="hesus">
+                </div>
+                
+            <div class="nav-links">
+                <div class="container hovring">
+                    <ul>
+                        <li><a href="#">
+                          <span><strong>JC1</strong></span>
+                          <img src="1.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                          <span><strong>JC2</strong></span>  
+                          <img src="2.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                          <span><strong>JC3</strong></span> 
+                          <img src="3.png" alt=""> 
+                        </a></li>
+                        <li><a href="#">
+                          <span><strong>JC4</strong></span> 
+                          <img src="4.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                          <span><strong>JC5</strong></span>  
+                          <img src="5.png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+
+            <div class="information">
+                <div class="overlay"></div>
+                <div class="woodarrow"><img src="woodarrow.png"></div>
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="painting.png">
+                        <div>
+                            <h1 class="h1design">"Verum Pulchritudo"</h1>
+                            <p>-NAS</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="painting.png">
+                        <div>
+                            <h1 class="h1design">"Videre Possum Tibi"</h1>
+                            <p>-NAS</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="painting.png">
+                        <div>
+                            <h1 class="h1design">"Absconditus Flos"</h1>
+                            <p>-NAS</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="painting.png">
+                        <div>
+                            <h1 class="h1design">"Profundus Intuitus"</h1>
+                            <p>-NAS</p>
+                        </div>
+                    </div>
+                    <div class="feature five">
+                        <img src="painting.png">
+                        <div>
+                            <h1 class="h1design">"Bellus Infantem"</h1>
+                            <p>-NAS</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        
+           <div class="controls">
+            <img src="uparrow.png" id="upBtn">
+            <h3> Drawings </h3>
+            <img src="downarrow.png" id="downBtn">
+           </div> 
+          
+        </div>
+
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            upBtn.onclick=function()
+            {
+                rotateSum=rotateValue+"rotate(-90deg)";
+                circle.style.transform=rotateSum;
+                rotateValue=rotateSum;
+            }
+
+            downBtn.onclick=function()
+            {
+                rotateSum=rotateValue+"rotate(90deg)";
+                circle.style.transform=rotateSum;
+                rotateValue=rotateSum;
+            }
+        </script>
+
+             
